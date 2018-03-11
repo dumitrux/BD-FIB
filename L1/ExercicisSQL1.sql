@@ -28,8 +28,8 @@ CREATE TABLE EMPLEATS
 INSERT INTO  DEPARTAMENTS VALUES (5,'VENDES',3,'MUNTANER','MADRID');
 INSERT INTO  EMPLEATS VALUES (3,'MANEL',250000,'MADRID',5,null);
 
-/*Doneu una sentència SQL per obtenir els números i els noms dels departament situats a MADRID, que tenen empleats que guanyen més de 200000.
-Pel joc de proves que trobareu al fitxer adjunt, la sortida ha de ser:
+/*Doneu una sentència SQL per obtenir els números i els noms dels departament situats a MADRID, que tenen empleats que guanyen més de 
+200000. Pel joc de proves que trobareu al fitxer adjunt, la sortida ha de ser:
 
 NUM_DPT     NOM_DPT
 5           VENDES
@@ -127,7 +127,8 @@ INSERT INTO  DEPARTAMENTS VALUES (5,'VENDES',3,'MUNTANER','MADRID');
 INSERT INTO  EMPLEATS VALUES (3,'MANEL',250000,'MADRID',5,null);
 
 /*
-Obtenir per cada departament situat a MADRID la mitjana dels sous dels seus empleats. Concretament, cal donar el número de departament, el nom de departament i la mitjana del sou.
+Obtenir per cada departament situat a MADRID la mitjana dels sous dels seus empleats. Concretament, cal donar el número de departament,
+el nom de departament i la mitjana del sou.
 
 Pel joc de proves que trobareu al fitxer adjunt, la sortida ha de ser:
 
