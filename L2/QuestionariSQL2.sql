@@ -30,7 +30,8 @@ INSERT INTO  EMPLEATS VALUES (3,'ROBERTO',25000,'MADRID',3,null);
 INSERT INTO  EMPLEATS VALUES (4,'JOAN',30000,'BARCELONA',3,null);
 
 /*
-Doneu una sentència SQL per obtenir el nom dels empleats que guanyen el sou més alt. Cal ordenar el resultat descendenment per nom de l'empleat. 
+Doneu una sentència SQL per obtenir el nom dels empleats que guanyen el sou més alt. Cal ordenar el resultat descendenment per nom 
+de l'empleat. 
 
 Pel joc de proves que trobareu al fitxer adjunt, la sortida seria:
 
@@ -129,7 +130,8 @@ INSERT INTO  EMPLEATS VALUES (3,'ROBERTO',25000,'MATARO',4,3);
 
 /*
 Doneu una sentència SQL per incrementar en 500000 el pressupost dels projectes que tenen algun empleat que treballa a BARCELONA. 
-Pel joc de proves que trobareu al fitxer adjunt, el pressupost del projecte que hi ha d'haver després de l'execució de la sentència és 1100000
+Pel joc de proves que trobareu al fitxer adjunt, el pressupost del projecte que hi ha d'haver després de l'execució de la sentència 
+és 1100000
 */
 
 -- Solució:
