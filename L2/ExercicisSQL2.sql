@@ -239,7 +239,8 @@ En la creació de les taules cal que tingueu en compte que:
 - Els atributs num_venda, quantitat, import són enters. 
 - Els atributs client, producte són char(30), i char(20) respectivament.
 
-Respecteu els noms i l'ordre en què apareixen les columnes (fins i tot dins la clau o claus que calgui definir). Tots els noms s'han de posar en majúscues com surt a l'enunciat. 
+Respecteu els noms i l'ordre en què apareixen les columnes (fins i tot dins la clau o claus que calgui definir). Tots els noms 
+s'han de posar en majúscues com surt a l'enunciat. 
 */
 
 -- Solució:
