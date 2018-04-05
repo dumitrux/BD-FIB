@@ -259,7 +259,7 @@ En la creació de les taules cal que tingueu en compte que:
 Respecteu els noms i l'ordre en què apareixen les columnes (fins i tot dins la clau o claus que calgui definir). Tots els noms s'han de posar en majúscules com surt a l'enunciat.
 */
 
--- Solució:
+-- Solución:
 create table FRANGES_HORARIES
 		(	INSTANT_INICI integer,
 			INSTANT_FI integer,
