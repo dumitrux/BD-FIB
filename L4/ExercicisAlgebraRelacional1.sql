@@ -200,7 +200,7 @@ Donar una seqüència d'operacions d'àlgebra relacional per obtenir informació
 Pel joc de proves que trobareu al fitxer adjunt, la sortida ha de ser:
 
 DNI	Modul	Numero	Instantinici
-999	Omega	128	1
+999	Omega	128	          1
 */
 
 -- Solución:

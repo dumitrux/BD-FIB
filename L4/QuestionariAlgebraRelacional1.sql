@@ -130,8 +130,8 @@ Doneu una seqüència d'operacions d'algebra relacional per obtenir el número i
 
 Pel joc de proves que trobareu al fitxer adjunt, la sortida seria:
 
-NOM_empl		NUM_empl
-ROBERTO		3
+NOM_empl        NUM_empl
+ROBERTO         3
 */
 
 -- Solución:
