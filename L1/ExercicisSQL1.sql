@@ -35,7 +35,7 @@ NUM_DPT     NOM_DPT
 5           VENDES
 */
 
--- Solució:
+-- Solución:
 select distinct d.num_dpt, d.nom_dpt 
 from empleats e, departaments d
 where d.ciutat_dpt IN('MADRID') and (e.sou > 200000) and e.num_dpt = d.num_dpt;
@@ -89,7 +89,7 @@ Nom_dpt     Nom_proj
 MARKETING   IBDVID
 */
 
--- Solució:
+-- Solución:
 select d.nom_dpt, p.nom_proj
 from departaments d, empleats e, projectes p
 where e.num_empl = 2 and d.num_dpt = e.num_dpt and e.num_proj = p.num_proj;
@@ -136,7 +136,7 @@ NUM_DPT     NOM_DPT     SOU
 5           VENDES      250000.00
 */
 
--- Solució:
+-- Solución:
 select d.num_dpt, d.nom_dpt, avg (e.sou) as sou
 from departaments d, empleats e
 where d.ciutat_dpt in ('MADRID') and e.num_dpt = d.num_dpt
