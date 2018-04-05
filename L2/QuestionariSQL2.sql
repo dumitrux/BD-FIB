@@ -39,7 +39,7 @@ NOM_EMPL
 JOAN
 */
 
--- Solució:
+-- Solución:
 select distinct e.nom_empl 
 from empleats e 
 where e.sou >= (select max(sou) from empleats) 
@@ -89,7 +89,7 @@ NUM_PROJ		NOM_PROJ
 1		IBDTEL
 */
 
--- Solució:
+-- Solución:
 select distinct p.num_proj, p.nom_proj  
 from projectes p
 where 2 <= (select count(*) from empleats e where e.num_proj = p.num_proj) 
@@ -134,7 +134,7 @@ Pel joc de proves que trobareu al fitxer adjunt, el pressupost del projecte que 
 és 1100000
 */
 
--- Solució:
+-- Solución:
 update projectes
 set pressupost = pressupost + 500000
 where 1 <= (select count(*)

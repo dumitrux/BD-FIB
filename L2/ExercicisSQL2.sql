@@ -54,7 +54,7 @@ NUM_DPT		NOM_DPT
 
 */
 
--- Solució:
+-- Solución:
 select d.num_dpt, d.nom_dpt
 from departaments d
 where 'MADRID' not in (select e.ciutat_empl 
@@ -119,7 +119,7 @@ CIUTAT_EMPL
 GIRONA
 */
 
--- Solució:
+-- Solución:
 select distinct e.ciutat_empl
 from empleats e
 where e.ciutat_empl not in (select d.ciutat_dpt
@@ -184,7 +184,7 @@ NUM_DPT		NOM_DPT
 
 */
 
--- Solució:
+-- Solución:
 select d.num_dpt, d.nom_dpt
 from departaments d, empleats e
 where d.num_dpt = e.num_dpt
@@ -243,7 +243,7 @@ Respecteu els noms i l'ordre en què apareixen les columnes (fins i tot dins la 
 s'han de posar en majúscues com surt a l'enunciat. 
 */
 
--- Solució:
+-- Solución:
 create table VENDES
 		(NUM_VENDA integer,
 	NUM_EMPL integer not null,
