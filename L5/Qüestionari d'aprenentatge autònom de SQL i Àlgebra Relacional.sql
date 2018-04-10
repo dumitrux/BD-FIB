@@ -46,7 +46,8 @@ DELETE FROM departaments;
 DELETE FROM projectes;
 
 /*
-Doneu una sentència SQL per obtenir el número i el nom dels empleats que viuen a la mateixa ciutat on està situat el departament on treballen
+Doneu una sentència SQL per obtenir el número i el nom dels empleats que viuen a la mateixa ciutat on està situat 
+el departament on treballen
 
 Pel joc de proves que trobareu al fitxer adjunt, la sortida seria:
 
@@ -106,7 +107,8 @@ DELETE FROM projectes;
 /*
 Suposem la base de dades que podeu trobar al fitxer adjunt.
 Suposem que aquesta base de dades està en un estat on no hi ha cap fila.
-Doneu una seqüència de sentències SQL d'actualització (INSERTs i/o UPDATEs) que violi la integritat d'entitat de la taula Empleats al'intentar duplicar la primary key d'aquesta taula de l'empleat. 
+Doneu una seqüència de sentències SQL d'actualització (INSERTs i/o UPDATEs) que violi la integritat d'entitat de la taula 
+Empleats al'intentar duplicar la primary key d'aquesta taula de l'empleat. 
 Les sentències NOMÉS han de violar aquesta restricció.
 */
 
