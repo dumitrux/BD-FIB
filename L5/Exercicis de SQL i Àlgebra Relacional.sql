@@ -122,7 +122,8 @@ En la creació de la taula cal que tingueu en compte que:
 - La nota ha de ser un enter entre 0 i 10. 
 - La nota té valor nul fins que s'ha fet la presentació del TFG. 
 
-Respecteu els noms i l'ordre en què apareixen les columnes (fins i tot dins la clau o claus que calgui definir). Tots els noms s'han de posar en majúscues/minúscules com surt a l'enunciat. 
+Respecteu els noms i l'ordre en què apareixen les columnes (fins i tot dins la clau o claus que calgui definir). Tots els noms 
+s'han de posar en majúscues/minúscules com surt a l'enunciat. 
 */
 
 -- Solución:
@@ -193,7 +194,8 @@ DELETE FROM despatxos;
 DELETE FROM professors;
 
 /*
-Doneu una seqüència d'operacions en àlgebra relacional per obtenir el nom dels professors que o bé tenen un sou superior a 2500, o bé no tenen cap assignació a un despatx amb superfície inferior a 20. 
+Doneu una seqüència d'operacions en àlgebra relacional per obtenir el nom dels professors que o bé tenen un sou superior a 2500,
+o bé no tenen cap assignació a un despatx amb superfície inferior a 20. 
 
 Pel joc de proves que trobareu al fitxer adjunt, la sortida seria: 
 
