@@ -30,7 +30,8 @@ INSERT INTO  DEPARTAMENTS VALUES (5,'VENDES',3,'MUNTANER','MADRID');
 INSERT INTO  EMPLEATS VALUES (3,'MANEL',250000,'MADRID',5,null);
 
 /*
-Doneu una seqüència d'operacions d'algebra relacional per obtenir els números i els noms dels departament situats a MADRID, que tenen algun empleat que guanya més de 200000. 
+Doneu una seqüència d'operacions d'algebra relacional per obtenir els números i els noms dels departament situats a MADRID, 
+que tenen algun empleat que guanya més de 200000. 
 
 Pel joc de proves que trobareu al fitxer adjunt, la sortida ha de ser:
 
@@ -126,7 +127,8 @@ INSERT INTO  DEPARTAMENTS VALUES (3,'MARKETING',3,'RIOS ROSAS','BARCELONA');
 INSERT INTO  EMPLEATS VALUES (3,'ROBERTO',25000,'BARCELONA',3,null);
 
 /*
-Doneu una seqüència d'operacions d'algebra relacional per obtenir el número i el nom dels empleats que viuen a la mateixa ciutat on està situat el departament on treballen.
+Doneu una seqüència d'operacions d'algebra relacional per obtenir el número i el nom dels empleats que viuen a la mateixa 
+ciutat on està situat el departament on treballen.
 
 Pel joc de proves que trobareu al fitxer adjunt, la sortida seria:
 
