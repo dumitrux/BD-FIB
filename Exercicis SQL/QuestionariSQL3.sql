@@ -48,7 +48,8 @@ DELETE FROM departaments;
 DELETE FROM projectes;
 
 /*
-Doneu una sentència SQL per obtenir el número i nom dels departaments tals que tots els seus empleats viuen a MADRID. El resultat no ha d'incloure aquells departaments que no tenen cap empleat. 
+Doneu una sentència SQL per obtenir el número i nom dels departaments tals que tots els seus empleats viuen a MADRID. 
+El resultat no ha d'incloure aquells departaments que no tenen cap empleat. 
 
 Pel joc de proves que trobareu al fitxer adjunt, la sortida seria:
 
@@ -189,13 +190,16 @@ delete from departaments;
 delete from projectes;
 
 /*
-Doneu una sentència d'inserció de files a la taula cost_ciutat que l'ompli a partir del contingut de la resta de taules de la base de dades. Tingueu en compte el següent: 
+Doneu una sentència d'inserció de files a la taula cost_ciutat que l'ompli a partir del contingut de la resta de taules de la base 
+de dades. Tingueu en compte el següent: 
 
-Hi haurà una fila de la taula per cada ciutat on hi ha un departament. El valor de l'atribut cost serà la suma del sou dels empleats dels departaments situats a la ciutat. 
+Hi haurà una fila de la taula per cada ciutat on hi ha un departament. El valor de l'atribut cost serà la suma del sou dels empleats 
+dels departaments situats a la ciutat. 
 
 Només han de sortir les ciutats on hi ha departament que tinguin empleats. 
 
-Pel joc de proves públic del fitxer adjunt, un cop executada la sentència d'inserció, a la taula cost_ciutat hi haurà les tuples següents:
+Pel joc de proves públic del fitxer adjunt, un cop executada la sentència d'inserció, a la taula cost_ciutat hi haurà les tuples 
+següents:
 
 CIUTAT_DPT		COST
 BARCELONA		100
@@ -256,7 +260,8 @@ En la creació de les taules cal que tingueu en compte que:
 - Els atributs instant_inici, instant_fi, num_tasca són enters.
 - L'atribut descripció ha de ser un char(50).
 
-Respecteu els noms i l'ordre en què apareixen les columnes (fins i tot dins la clau o claus que calgui definir). Tots els noms s'han de posar en majúscules com surt a l'enunciat.
+Respecteu els noms i l'ordre en què apareixen les columnes (fins i tot dins la clau o claus que calgui definir). Tots els noms s'han 
+de posar en majúscules com surt a l'enunciat.
 */
 
 -- Solución:

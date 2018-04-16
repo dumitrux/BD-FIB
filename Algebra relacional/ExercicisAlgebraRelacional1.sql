@@ -28,7 +28,8 @@ INSERT INTO PROJECTES VALUEs (2,'IBDVID','VIDEO',500000);
 INSERT INTO  EMPLEATS VALUES (2,'ROBERTO',25000,'BARCELONA',3,2);
 
 /*
-Doneu una seqüència d'operacions d'algebra relacional per obtenir el nom del departament on treballa i el nom del projecte on està assignat l'empleat número 2. 
+Doneu una seqüència d'operacions d'algebra relacional per obtenir el nom del departament on treballa i el nom del projecte 
+on està assignat l'empleat número 2. 
 
 Pel joc de proves que trobareu al fitxer adjunt, la sortida seria:
 
@@ -78,7 +79,8 @@ INSERT INTO  EMPLEATS VALUES (4,'JOAN',30000,'BARCELONA',3,null);
 INSERT INTO  EMPLEATS VALUES (5,'PERE',25000,'MATARO',3,null);
 
 /*
-Doneu una seqüència d'operacions de l'àlgebra relacional per obtenir el número i nom dels departaments que tenen dos o més empleats que viuen a ciutats diferents. 
+Doneu una seqüència d'operacions de l'àlgebra relacional per obtenir el número i nom dels departaments que tenen dos o més 
+empleats que viuen a ciutats diferents. 
 
 Pel joc de proves que trobareu al fitxer adjunt, la sortida seria:
 
@@ -129,7 +131,8 @@ INSERT INTO  PROJECTES VALUES (1,'IBDTEL','TELEVISIO',1000000);
 INSERT INTO  EMPLEATS VALUES (3,'ROBERTO',25000,'MADRID',3,1);
 
 /*
-Doneu una seqüència d'operacions d'algebra relacional per obtenir el número i nom dels departaments tals que tots els seus empleats viuen a MADRID. El resultat no ha d'incloure aquells departaments que no tenen cap empleat. 
+Doneu una seqüència d'operacions d'algebra relacional per obtenir el número i nom dels departaments tals que tots els seus 
+empleats viuen a MADRID. El resultat no ha d'incloure aquells departaments que no tenen cap empleat. 
 
 Pel joc de proves que trobareu al fitxer adjunt, la sortida seria:
 
@@ -195,7 +198,9 @@ DELETE FROM despatxos;
 DELETE FROM professors;;
 
 /*
-Donar una seqüència d'operacions d'àlgebra relacional per obtenir informació sobre els despatxos que només han estat ocupats per professors amb sou igual a 100000. Es vol obtenir el dni, el modul i el numero del despatx, i l'instant d'inici de les assignacions a aquests despatxos.
+Donar una seqüència d'operacions d'àlgebra relacional per obtenir informació sobre els despatxos que només han estat ocupats 
+per professors amb sou igual a 100000. Es vol obtenir el dni, el modul i el numero del despatx, i l'instant d'inici de les 
+assignacions a aquests despatxos.
 
 Pel joc de proves que trobareu al fitxer adjunt, la sortida ha de ser:
 
