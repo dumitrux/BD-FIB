@@ -1,4 +1,4 @@
-﻿-- Q1:
+-- Q1:
 CREATE TABLE DEPARTAMENTS
          (	NUM_DPT INTEGER,
 	NOM_DPT CHAR(20),
@@ -28,7 +28,8 @@ CREATE TABLE EMPLEATS
 INSERT INTO  DEPARTAMENTS VALUES (5,'VENDES',3,'MUNTANER','MADRID');
 INSERT INTO  EMPLEATS VALUES (3,'MANEL',250000,'MADRID',5,null);
 
-/*Doneu una sentència SQL per obtenir els números i els noms dels departament situats a MADRID, que tenen empleats que guanyen més de 
+/*
+Doneu una sentència SQL per obtenir els números i els noms dels departament situats a MADRID, que tenen empleats que guanyen més de 
 200000. Pel joc de proves que trobareu al fitxer adjunt, la sortida ha de ser:
 
 NUM_DPT     NOM_DPT
