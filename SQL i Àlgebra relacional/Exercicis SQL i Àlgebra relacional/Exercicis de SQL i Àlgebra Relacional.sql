@@ -2,7 +2,6 @@
 
 
 
-
 -- Q2:
 
 CREATE TABLE DEPARTAMENTS
@@ -70,12 +69,6 @@ order by num_dpt asc, nom_dpt asc, ciutat_dpt asc;
 
 
 -- Q3:
-----------------
--- Neteja
-----------------
-
-
-
 ------------------------
 -- Inicialitzacio
 ------------------------
@@ -142,7 +135,6 @@ create table presentacioTFG
 			check (dniDirector <> dniPresident and dniDirector <> dniVocal),
 			check (dniPresident <> dniVocal)
 			);
-
 
 
 
@@ -217,7 +209,6 @@ I=E[nomProf]
 J=A[nomProf]
 K=J_u_I
 R=K_u_H
-
 
 
 
