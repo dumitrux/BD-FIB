@@ -51,7 +51,6 @@ Pel joc de proves que trobareu al fitxer adjunt, la sortida seria:
 
 NUM_DPT		NOM_DPT
 3		MARKETING
-
 */
 
 -- Solución:
@@ -123,7 +122,7 @@ GIRONA
 select distinct e.ciutat_empl
 from empleats e
 where e.ciutat_empl not in (select d.ciutat_dpt
-							from departaments d);
+			from departaments d);
 
 
 
@@ -181,7 +180,6 @@ Pel joc de proves que trobareu al fitxer adjunt, la sortida seria:
 
 NUM_DPT		NOM_DPT
 3		MARKETING
-
 */
 
 -- Solución:
