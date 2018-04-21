@@ -128,8 +128,8 @@ NUM_DPT		NOM_DPT
 select distinct d.num_dpt, d.nom_dpt
 from departaments d, empleats e
 where e.num_dpt = d.num_dpt and e.ciutat_empl in (select e1.ciutat_empl
-				from empleats e1
-				where d.num_dpt = e1.num_dpt and e1.num_empl <> e.num_empl);
+			from empleats e1
+			where d.num_dpt = e1.num_dpt and e1.num_empl <> e.num_empl);
 
 
 
