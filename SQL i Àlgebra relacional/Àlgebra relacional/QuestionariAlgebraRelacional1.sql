@@ -83,7 +83,7 @@ Doneu una seqüència d'operacions d'àlgebra relacional per obtenir els noms i 
 Pel joc de proves que trobareu al fitxer adjunt, la sortida seria:
 
 Nom_proj		Num_proj
-IBDTEL		1
+IBDTEL			1
 */
 
 -- Solución:
