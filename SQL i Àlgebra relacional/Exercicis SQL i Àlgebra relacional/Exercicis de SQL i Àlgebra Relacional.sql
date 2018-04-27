@@ -1,9 +1,70 @@
 -- Q1:
+-- Sentències de preparació de la base de dades:
+create table professors
+(dni char(50),
+nomProf char(50) unique,
+telefon char(15),
+sou integer not null check(sou>0),
+primary key (dni));
+
+create table despatxos
+(modul char(5), 
+numero char(5), 
+superficie integer not null check(superficie>12),
+primary key (modul,numero));
+
+create table assignacions
+(dni char(50), 
+modul char(5), 
+numero char(5), 
+instantInici integer, 
+instantFi integer,
+primary key (dni, modul, numero, instantInici),
+foreign key (dni) references professors,
+foreign key (modul,numero) references despatxos);
+-- instantFi te valor null quan una assignacio es encara vigent.
+
+-- Sentències d'esborrat de la base de dades:
+DROP TABLE assignacions;
+DROP TABLE despatxos;
+DROP TABLE professors;
+
+--------------------------
+-- Joc de proves Public
+--------------------------
+
+-- Sentències d'inicialització:
+insert into professors values('111','toni','3111',100);
+insert into professors values('222','pere','4111',200);
+
+insert into despatxos values('omega','118',16);
+
+insert into assignacions values('111','omega','118',109,344);
+insert into assignacions values('222','omega','118',345,null);
+
+-- Sentències de neteja de les taules:
+DELETE FROM assignacions;
+DELETE FROM despatxos;
+DELETE FROM professors;
+
+/*
+Donar una sentència SQL per obtenir per cada mòdul on hi hagi despatxos, la durada mitjana de les assignacions finalitzades (instantFi diferent de null) a despatxos del mòdul. El resultat ha d'estar ordenat ascendentment pel nom del mòdul.
+
+Pel joc de proves que trobareu al fitxer adjunt, la sortida ha de ser:
+
+MODUL		MITJANA_DURADA
+Omega		235.00
+*/
+
+-- Solución:
+select modul, avg(instantfi-instantinici) as mitjana_durada
+from assignacions
+group by modul, numero;
+
 
 
 
 -- Q2:
-
 CREATE TABLE DEPARTAMENTS
          (	NUM_DPT INTEGER,
 	NOM_DPT CHAR(20),
@@ -138,6 +199,7 @@ create table presentacioTFG
 
 
 
+
 -- Q4:
 -- Sentències de preparació de la base de dades:
 create table professors
@@ -212,4 +274,80 @@ R=K_u_H
 
 
 
+
 -- Q5:
+-- Sentències de preparació de la base de dades:
+CREATE TABLE DEPARTAMENTS
+         (	NUM_DPT INTEGER,
+	NOM_DPT CHAR(20),
+	PLANTA INTEGER,
+	EDIFICI CHAR(30),
+	CIUTAT_DPT CHAR(20),
+	PRIMARY KEY (NUM_DPT));
+
+CREATE TABLE PROJECTES
+         (	NUM_PROJ INTEGER,
+	NOM_PROJ CHAR(10),
+	PRODUCTE CHAR(20),
+	PRESSUPOST INTEGER,
+	PRIMARY KEY (NUM_PROJ));
+
+CREATE TABLE EMPLEATS
+         (	NUM_EMPL INTEGER,
+	NOM_EMPL CHAR(30),
+	SOU INTEGER,
+	CIUTAT_EMPL CHAR(20),
+	NUM_DPT INTEGER,
+	NUM_PROJ INTEGER,
+	PRIMARY KEY (NUM_EMPL),
+	FOREIGN KEY (NUM_DPT) REFERENCES DEPARTAMENTS (NUM_DPT),
+	FOREIGN KEY (NUM_PROJ) REFERENCES PROJECTES (NUM_PROJ));
+
+CREATE TABLE COST_CIUTAT
+        (CIUTAT_DPT CHAR(20),
+        COST INTEGER,
+        PRIMARY KEY (CIUTAT_DPT));
+
+-- Sentències d'esborrat de la base de dades:
+DROP TABLE cost_ciutat;
+DROP TABLE empleats;
+DROP TABLE departaments;
+DROP TABLE projectes;
+
+--------------------------
+-- Joc de proves Public
+--------------------------
+
+-- Sentències d'inicialització:
+INSERT INTO  PROJECTES VALUES (3,'PR1123','TELEVISIO',600000);
+
+INSERT INTO  DEPARTAMENTS VALUES (4,'MARKETING',3,'RIOS ROSAS','BARCELONA');
+
+-- Sentències de neteja de les taules:
+delete from cost_ciutat;
+delete from empleats;
+delete from departaments;
+delete from projectes;
+
+/*
+Doneu una sentència d'inserció de files a la taula cost_ciutat que l'ompli a partir del contingut de la resta de taules de la base de dades. Tingueu en compte el següent: 
+
+Cal inserir una fila a la taula cost_ciutat per cada ciutat on hi ha un o més departaments, però no hi ha cap departament que tingui empleats. 
+
+Per tant, només s'han d'inserir les ciutats on cap dels departaments situats a la ciutat tinguin empleats. 
+
+El valor de l'atribut cost ha de ser 0.
+
+Pel joc de proves públic del fitxer adjunt, un cop executada la sentència d'inserció, a la taula cost_ciutat hi haurà les tuples següents:
+
+CIUTAT_DPT		COST
+BARCELONA		0
+*/
+
+-- Solución:
+insert into cost_ciutat 
+	(select distinct d.ciutat_dpt, 0
+	from departaments d
+	where not exists (select *
+					from empleats e
+					where d.num_dpt = e.num_dpt));
