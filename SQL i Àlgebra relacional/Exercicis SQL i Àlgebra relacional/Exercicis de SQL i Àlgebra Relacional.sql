@@ -48,7 +48,8 @@ DELETE FROM despatxos;
 DELETE FROM professors;
 
 /*
-Donar una sentència SQL per obtenir per cada mòdul on hi hagi despatxos, la durada mitjana de les assignacions finalitzades (instantFi diferent de null) a despatxos del mòdul. El resultat ha d'estar ordenat ascendentment pel nom del mòdul.
+Donar una sentència SQL per obtenir per cada mòdul on hi hagi despatxos, la durada mitjana de les assignacions 
+finalitzades (instantFi diferent de null) a despatxos del mòdul. El resultat ha d'estar ordenat ascendentment pel nom del mòdul.
 
 Pel joc de proves que trobareu al fitxer adjunt, la sortida ha de ser:
 
@@ -61,6 +62,19 @@ select modul, avg(instantfi-instantinici) as mitjana_durada
 from assignacions
 group by modul, numero;
 
+/*
+Joc de proves i descripció de l'error:
+JP2 - No funciona quan hi ha un únic mòdul amb dos despatxos, el primer amb una assignació finalitzada, el segon amb una no finalitzada.
+JP3 - No funciona quan hi ha un únic mòdul amb dos despatxos, cadascun amb una assignació finalitzada.
+JP4 - No funciona quan hi ha un únic mòdul amb dos despatxos, el primer amb una assignació finalitzada i una no finalitada, 
+	i el segon amb una assignació finalitzada.
+JP5 - No funciona quan hi ha un únic mòdul amb dos despatxos, el primer amb dues assignacions finalitzades, 
+	i el segon amb una assignació finalitzada.
+JP7 - No funciona quan hi ha un dos mòduls, un amb un despatx pel que hi ha assignacions finalitzades, 
+	i l'altre amb un despatx també amb assignacions finalitzades.
+JP8 - 	No funciona quan hi ha un professor amb dues assignacions finalitzades. Un dels depatxos té superfície superior a 15 
+	i l'altre no. Els dos despatxos tenen el mateix número i diferent mòdul.
+*/
 
 
 
@@ -125,7 +139,6 @@ where not exists (select e1.num_proj
 					from empleats e1
 					where e.num_dpt = e1.num_dpt and e.num_proj <> e1.num_proj)
 order by num_dpt asc, nom_dpt asc, ciutat_dpt asc;
-
 
 
 
@@ -196,7 +209,6 @@ create table presentacioTFG
 			check (dniDirector <> dniPresident and dniDirector <> dniVocal),
 			check (dniPresident <> dniVocal)
 			);
-
 
 
 
@@ -274,7 +286,6 @@ R=K_u_H
 
 
 
-
 -- Q5:
 -- Sentències de preparació de la base de dades:
 CREATE TABLE DEPARTAMENTS
@@ -330,15 +341,18 @@ delete from departaments;
 delete from projectes;
 
 /*
-Doneu una sentència d'inserció de files a la taula cost_ciutat que l'ompli a partir del contingut de la resta de taules de la base de dades. Tingueu en compte el següent: 
+Doneu una sentència d'inserció de files a la taula cost_ciutat que l'ompli a partir del contingut de la resta de taules de la 
+base de dades. Tingueu en compte el següent: 
 
-Cal inserir una fila a la taula cost_ciutat per cada ciutat on hi ha un o més departaments, però no hi ha cap departament que tingui empleats. 
+Cal inserir una fila a la taula cost_ciutat per cada ciutat on hi ha un o més departaments, però no hi ha cap departament que 
+tingui empleats. 
 
 Per tant, només s'han d'inserir les ciutats on cap dels departaments situats a la ciutat tinguin empleats. 
 
 El valor de l'atribut cost ha de ser 0.
 
-Pel joc de proves públic del fitxer adjunt, un cop executada la sentència d'inserció, a la taula cost_ciutat hi haurà les tuples següents:
+Pel joc de proves públic del fitxer adjunt, un cop executada la sentència d'inserció, a la taula cost_ciutat hi haurà les
+tuples següents:
 
 CIUTAT_DPT		COST
 BARCELONA		0
@@ -351,3 +365,9 @@ insert into cost_ciutat
 	where not exists (select *
 					from empleats e
 					where d.num_dpt = e.num_dpt));
+
+/*
+Joc de proves i descripció de l'error:
+JP1 - Files de cost: L'estat de la taula cost no és correcte després de les insercions, en el cas que hi hagi una ciutat 
+	on hi ha dos departaments i només un d'ells té empleats.
+*/
