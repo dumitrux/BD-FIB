@@ -10,5 +10,6 @@
 - L5 [Exercicis SQL i Àlgebra relacional](https://github.com/dumitrux/BD-FIB/tree/master/SQL%20i%20%C3%80lgebra%20relacional/Exercicis%20SQL%20i%20%C3%80lgebra%20relacional)
 
 ### Procediments i Disparadors
-- L6- [Procediments bàsics]()
-- L7- [Disparadors bàsics]()
+- L6- [Procediments bàsics](https://github.com/dumitrux/BD-FIB/tree/master/Procediments%20i%20Disparadors/Procediments%20b%C3%A0sics)
+- L7- [Disparadors bàsics](https://github.com/dumitrux/BD-FIB/tree/master/Procediments%20i%20Disparadors/Disparadors%20b%C3%A0sics)
+- L8- [Procediments / Disparadors]()
