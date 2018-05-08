@@ -87,7 +87,7 @@ DECLARE
  
 BEGIN
 
-	
+	-- PENALIZACION. No necesario el if(condicional), se debe aplicar en excepcion con foregin_key_violation
 	if exists(select * from empleats e where e.num_dpt = numdept) then
 		SELECT texte INTO missatge FROM missatgesExcepcions WHERE num=1; 
            RAISE EXCEPTION '%',missatge;
