@@ -1,0 +1,16 @@
+insert into professors values('111','toni','3111');
+insert into professors values('222','carles','3222');
+
+insert into despatxos values('omega','118',16);
+insert into despatxos values('omega','128',20);
+insert into despatxos values('c6','109',14);
+insert into despatxos values('c6','120',14);
+insert into despatxos values('u','125',13);
+
+insert into assignacions values('111','u','125',0,108);
+insert into assignacions values('111','c6','120',109,344);
+insert into assignacions values('111','omega','128',345,null);
+insert into assignacions values('222','c6','109',109,344);
+insert into assignacions values('222','omega','118',345,null);
+
+
