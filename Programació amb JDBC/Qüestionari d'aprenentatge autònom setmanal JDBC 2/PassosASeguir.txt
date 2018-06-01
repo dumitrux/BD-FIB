@@ -1,0 +1,41 @@
+==================================================================
+Els passos que heu de seguir són els següents:
+==================================================================
+
+1.- Obriu Guia de Programació en JDBC (https://learnsql.fib.upc.es/moodle/mod/resource/view.php?id=240). Repasseu la informació que se us ofereix en aquesta guia. 
+
+2.- Executeu el programa Eclipse
+
+3.- Importeu el projecte que podeu trobar al zip adjunt
+
+4.- El projecte implementa el programa Practica. 
+4.1- Enteneu el contingut del fitxer ProgramaPractica.pdf
+https://learnsql.fib.upc.es/moodle/file.php/3/3_Material_JDBC/ProgramaPractica.pdf
+
+5. Copiar el driver JDBC al projecte
+5.1- Si no l'heu baixat previament, baixeu el driver
+https://learnsql.fib.upc.es/moodle/mod/resource/view.php?id=3127
+5.2- Copieu el driver a la carpeta "libraries" del projecte Eclipse
+
+6.- Repasseu el contingut de les carpetes i fitxers que es poden trobar dins del projecte.
+6.1- Vosaltres haureu d'implementar el mètode Consulta de la classe CtrlDadesPublic.java
+6.1- Consulteu el fitxer metodesAuxiliars.txt que descriu els mètodes que heu des del mètode Consulta. 
+
+7.- Prepareu la base de dades a través PgAdminIII
+
+8.- Editeu el fitxer dadesconnexio.txt
+
+9.- Programeu el mètode Consulta de la classe src/CtrlDadesPublic.java (segons enunciat de l'exercici).
+
+10.- Compileu el projecte
+
+11.- Executeu el programa Pràctica, pel joc de proves públic, i per altres jocs de prova dissenyats per vosaltres.
+11.1.- Per fer nous jocs de proves també podeu editar el fitxer dadesentrada.txt
+
+12.- Corregiu el codi CtrlDadesPublic.java en el corrector del LearnSQL.
+
+
+
+
+
+

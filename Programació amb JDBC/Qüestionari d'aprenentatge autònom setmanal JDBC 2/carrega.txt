@@ -1,0 +1,8 @@
+insert into professors values('111','Toni Cases','3111');
+insert into professors values('222','Joan Pi','3222');
+
+insert into despatxos values('omega','124',16);
+insert into despatxos values('omega','118',16);
+
+insert into assignacions values('111','omega','124',100,200);
+insert into assignacions values('222','omega','118',50,80);
