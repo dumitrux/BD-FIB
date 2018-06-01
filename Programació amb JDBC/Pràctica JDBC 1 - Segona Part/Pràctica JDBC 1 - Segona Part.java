@@ -22,7 +22,7 @@ En el fitxer adjunt trobareu:
 - El projecte Eclipse que cal estendre. 
 */
 
--- Solución:
+//Solución:
 
 /* Imports de la classe */
 import java.sql.*; 
@@ -31,23 +31,29 @@ import java.sql.*;
 class CtrlDadesPublic extends CtrlDadesPrivat {
 	
 	public ConjuntTuples consulta(Connection c, Tuple params) throws BDException {
-		ConjuntTuples ct = new ConjuntTuples();
-		PreparedStatement ps = c.prepareStatement("select count(*) as nombreA" + "from assignacions" + "where dni = ?");
-		int i = 1;
-		String s = params.consulta(i);
-		while(!s.equals("-999")) {
-			Tuple fila = new Tuple();
-			String valorColumna;
-			ps.setString(1, s);
-			ResultSet num = ps.executeQuery();
-			int numAssig = num.getInt("nombreA");
-			valorColumna.setString("numAssig");
-			fila.afegir(s);
-			fila.afegir(valorColumna);
-			ct.afegir(fila);
-			++i;
-			s = params.consulta(i);
-		}
-		return ct;
-	}
+        try {
+        ConjuntTuples ct = new ConjuntTuples();
+        PreparedStatement ps = c.prepareStatement("select count(*) as nombreA from assignacions " + 
+        " where dni = ?");
+        int i = 1;
+        String s = params.consulta(i);
+        while(!s.equals("-999")) {
+            Tuple fila = new Tuple();
+            ps.setString(1, s);
+            ResultSet num = ps.executeQuery();
+            num.next();
+            int numAssig = num.getInt("nombreA");
+            String num_a = String.valueOf(numAssig);
+            fila.afegir(s);
+            fila.afegir(num_a);
+            ct.afegir(fila);
+            ++i;
+            s = params.consulta(i);
+            }
+        return ct;
+        }
+        catch(SQLException se) {
+            throw new BDException(11);
+        }
+    }
 }
