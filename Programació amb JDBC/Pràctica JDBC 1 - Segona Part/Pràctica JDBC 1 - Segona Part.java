@@ -3,7 +3,8 @@ PASSOS PREVIS: LLegir el contingut del fitxer PassosASeguir.txt (dins del zip de
 
 EXERCICI:
 Heu d'implementar el mètode Consulta de la classe CtrlDdadesPublic. Aquest mètode ha de: 
-- Retornar una fila per cada dni de professor obtingut a partir dels paràmetres d'entrada. En cada fila hi ha d'haver el dni d'un professor i la quantitat d'assignacions del professor.
+- Retornar una fila per cada dni de professor obtingut a partir dels paràmetres d'entrada. En cada fila hi ha d'haver 
+el dni d'un professor i la quantitat d'assignacions del professor.
 
 Cal tenir en compte que: 
 - Els dni de professors en els paràmetres d'entrada s'hauran acabat quan es trobi el dni -999.
