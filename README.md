@@ -3,13 +3,18 @@
 ## Laboratori
 
 ### SQL i Àlgebra relacional
-- L1- [El llenguatge SQL1](https://github.com/dumitrux/BD-FIB/tree/master/SQL%20i%20%C3%80lgebra%20relacional/El%20llenguatge%20SQL1)
-- L2- [El llenguatge SQL2](https://github.com/dumitrux/BD-FIB/tree/master/SQL%20i%20%C3%80lgebra%20relacional/El%20llenguatge%20SQL2)
-- L3- [ExercicisSQL](https://github.com/dumitrux/BD-FIB/tree/master/SQL%20i%20%C3%80lgebra%20relacional/ExercicisSQL)
-- L4- [Àlgebra relacional](https://github.com/dumitrux/BD-FIB/tree/master/SQL%20i%20%C3%80lgebra%20relacional/%C3%80lgebra%20relacional)
-- L5 [Exercicis SQL i Àlgebra relacional](https://github.com/dumitrux/BD-FIB/tree/master/SQL%20i%20%C3%80lgebra%20relacional/Exercicis%20SQL%20i%20%C3%80lgebra%20relacional)
+- [El llenguatge SQL1](https://github.com/dumitrux/BD-FIB/tree/master/SQL%20i%20%C3%80lgebra%20relacional/El%20llenguatge%20SQL1)
+- [El llenguatge SQL2](https://github.com/dumitrux/BD-FIB/tree/master/SQL%20i%20%C3%80lgebra%20relacional/El%20llenguatge%20SQL2)
+- [ExercicisSQL](https://github.com/dumitrux/BD-FIB/tree/master/SQL%20i%20%C3%80lgebra%20relacional/ExercicisSQL)
+- [Àlgebra relacional](https://github.com/dumitrux/BD-FIB/tree/master/SQL%20i%20%C3%80lgebra%20relacional/%C3%80lgebra%20relacional)
+- [Exercicis SQL i Àlgebra relacional](https://github.com/dumitrux/BD-FIB/tree/master/SQL%20i%20%C3%80lgebra%20relacional/Exercicis%20SQL%20i%20%C3%80lgebra%20relacional)
 
 ### Procediments i Disparadors
-- L6- [Procediments bàsics](https://github.com/dumitrux/BD-FIB/tree/master/Procediments%20i%20Disparadors/Procediments%20b%C3%A0sics)
-- L7- [Disparadors bàsics](https://github.com/dumitrux/BD-FIB/tree/master/Procediments%20i%20Disparadors/Disparadors%20b%C3%A0sics)
-- L8- [Procediments / Disparadors]()
+- [Procediments bàsics](https://github.com/dumitrux/BD-FIB/tree/master/Procediments%20i%20Disparadors/Procediments%20b%C3%A0sics)
+- [Disparadors bàsics](https://github.com/dumitrux/BD-FIB/tree/master/Procediments%20i%20Disparadors/Disparadors%20b%C3%A0sics)
+- [Procediments / Disparadors](https://github.com/dumitrux/BD-FIB/tree/master/Procediments%20i%20Disparadors/Procediments%26Disparadors)
+
+### Programació amb JDBC
+- [Pràctica JDBC 1 - Primera Part](https://github.com/dumitrux/BD-FIB/blob/master/Programaci%C3%B3%20amb%20JDBC/Pr%C3%A0ctica%20JDBC%201%20-%20Primera%20Part/Pr%C3%A0ctica%20JDBC%201%20-%20Primera%20Part.txt)
+- [Pràctica JDBC 1 - Segona Part](https://github.com/dumitrux/BD-FIB/blob/master/Programaci%C3%B3%20amb%20JDBC/Pr%C3%A0ctica%20JDBC%201%20-%20Segona%20Part/Pr%C3%A0ctica%20JDBC%201%20-%20Segona%20Part.java)
+- [Qüestionari d'aprenentatge autònom setmanal JDBC 2](Qüestionari d'aprenentatge autònom setmanal JDBC 2)
