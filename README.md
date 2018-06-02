@@ -17,4 +17,4 @@
 ### Programació amb JDBC
 - [Pràctica JDBC 1 - Primera Part](https://github.com/dumitrux/BD-FIB/blob/master/Programaci%C3%B3%20amb%20JDBC/Pr%C3%A0ctica%20JDBC%201%20-%20Primera%20Part/Pr%C3%A0ctica%20JDBC%201%20-%20Primera%20Part.txt)
 - [Pràctica JDBC 1 - Segona Part](https://github.com/dumitrux/BD-FIB/blob/master/Programaci%C3%B3%20amb%20JDBC/Pr%C3%A0ctica%20JDBC%201%20-%20Segona%20Part/Pr%C3%A0ctica%20JDBC%201%20-%20Segona%20Part.java)
-- [Qüestionari d'aprenentatge autònom setmanal JDBC 2](Qüestionari d'aprenentatge autònom setmanal JDBC 2)
+- [Qüestionari d'aprenentatge autònom setmanal JDBC 2](https://github.com/dumitrux/BD-FIB/blob/master/Programaci%C3%B3%20amb%20JDBC/Q%C3%BCestionari%20d'aprenentatge%20aut%C3%B2nom%20setmanal%20JDBC%202/Questionari%20daprenentatge%20autonom%20setmanal%20JDBC%202.java)
