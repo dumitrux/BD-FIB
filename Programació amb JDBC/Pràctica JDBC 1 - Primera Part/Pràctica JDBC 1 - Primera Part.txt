@@ -7,7 +7,8 @@ Obriu Guia de Programació en JDBC. Repasseu la informació que se us ofereix en
 Executeu el programa Eclipse
 Importeu el projecte Eclipse que podeu trobar al zip adjunt
 Descarregueu el driver JDBC de la pàgina del curs a una carpeta de l'ordinador.
-Copieu el driver de JDBC a la carpeta "libraries" del projecte Eclipse (es pot fer simplement arrossegant des d'una carpeta on el tingueu).
+Copieu el driver de JDBC a la carpeta "libraries" del projecte Eclipse (es pot fer simplement arrossegant des d'una carpeta
+on el tingueu).
 Repasseu el contingut de les carpetes i fitxers que es poden trobar dins del projecte Eclipse.
 Prepareu la base de dades des de DBeaver Executeu les sentències SQL de creació de taules (fitxer crea.txt) i càrrega de files 
 a les taules (fitxer carrega.txt).
