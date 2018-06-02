@@ -1,51 +1,52 @@
 /*
-AQUEST EXERCICI NO ES CORREGIR¿ DE MANERA AUTOM¿TICA
+AQUEST EXERCICI NO ES CORREGIR√Ä DE MANERA AUTOM√ÄTICA
 
 PASSOS A SEGUIR
 Apartat 1
-Obriu Guia de ProgramaciÛ en JDBC. Repasseu la informaciÛ que se us ofereix en aquesta guia.
+Obriu Guia de Programaci√≥ en JDBC. Repasseu la informaci√≥ que se us ofereix en aquesta guia.
 Executeu el programa Eclipse
 Importeu el projecte Eclipse que podeu trobar al zip adjunt
-Descarregueu el driver JDBC de la p‡gina del curs a una carpeta de l'ordinador.
+Descarregueu el driver JDBC de la p√†gina del curs a una carpeta de l'ordinador.
 Copieu el driver de JDBC a la carpeta "libraries" del projecte Eclipse (es pot fer simplement arrossegant des d'una carpeta on el tingueu).
 Repasseu el contingut de les carpetes i fitxers que es poden trobar dins del projecte Eclipse.
-Prepareu la base de dades des de DBeaver Executeu les sentËncies SQL de creaciÛ de taules (fitxer crea.txt) i c‡rrega de files a les taules (fitxer carrega.txt).
+Prepareu la base de dades des de DBeaver Executeu les sent√®ncies SQL de creaci√≥ de taules (fitxer crea.txt) i c√†rrega de files 
+a les taules (fitxer carrega.txt).
 Editeu codi del programa gestioProfes.java (carpeta "src")
 Poseu el nom de la vostra base de dades (LaVostraBD)
 Poseu l'esquema on estan les taules (ElVostreEsquema).
-Poseu el vostre username de connexiÛ a la base de dades (ElVostreUsername, ElVostrePassword).
-Comproveu que el programa no tÈ errors
+Poseu el vostre username de connexi√≥ a la base de dades (ElVostreUsername, ElVostrePassword).
+Comproveu que el programa no t√© errors
 
 Apartat 2
-ExecuciÛ 1
+Execuci√≥ 1
 Abans d'executar el programa, des del DBeaver feu select * from Professors
-Mireu el codi del programa gestioProfes per veure quË fa sobre la taula Professors.
+Mireu el codi del programa gestioProfes per veure qu√® fa sobre la taula Professors.
 Compileu el programa.
 Executeu el programa.
 Des del DBeaver torneu a fer select * from Professors
-Quin ha estat l'efecte de l'execuciÛ del programa sobre la taula Professors? PerquË?
-ExecuciÛ 2
-Editeu el programa. Substituiu la sentËncia "rollback" per una sentËncia "commit".
+Quin ha estat l'efecte de l'execuci√≥ del programa sobre la taula Professors? Perqu√®?
+Execuci√≥ 2
+Editeu el programa. Substituiu la sent√®ncia "rollback" per una sent√®ncia "commit".
 Compileu el programa.
 Executeu el programa.
 Des del DBeaver feu torneu a fer select * from Professors
-Quin ha estat l'efecte de l'execuciÛ del programa sobre la taula Professors? PerquË?
-ExecuciÛ 3
+Quin ha estat l'efecte de l'execuci√≥ del programa sobre la taula Professors? Perqu√®?
+Execuci√≥ 3
 Executeu una altra vegada el programa.
-Quina excepciÛ es produeix?
-Quin ha estat l'efecte de l'execuciÛ del programa sobre la taula Professors? PerquË?
-Com podrieu fer (sense afegir accessos a la base de dades des del programa) que quan es dongui aquesta excepciÛ en lloc del missatge obtingut surti "El professor ja existeix"?
+Quina excepci√≥ es produeix?
+Quin ha estat l'efecte de l'execuci√≥ del programa sobre la taula Professors? Perqu√®?
+Com podrieu fer (sense afegir accessos a la base de dades des del programa) que quan es dongui aquesta excepci√≥ en lloc del missatge
+obtingut surti "El professor ja existeix"?
 
-Escriviu la resposta a les preguntes anteriors en el formulari del q¸estionari i premeu "Envia".
+Escriviu la resposta a les preguntes anteriors en el formulari del q√ºestionari i premeu "Envia".
 */
 
-
--- SoluciÛn:
-ExecuciÛ 1:
+-- Soluci√≥n:
+Execuci√≥ 1:
 Cap, perque fa un "rollback".
-ExecuciÛ 2:
+Execuci√≥ 2:
 Afegeix un professors a la BD, perque es confirma "commit".
-ExecuciÛ 3:
+Execuci√≥ 3:
 Error de "unique_violation", a causa de la clau primaria repetida.
 if(se.getSQLState().equals("23505"))
 System.out.println ("El professor ja existeix");
