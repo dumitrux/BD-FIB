@@ -6,10 +6,12 @@ Heu d'implementar el mètode consulta. Aquest mètode ha de:
 - Per cada despatx cal donar el mòdul i número de despatx. 
 
 Cal tenir en compte que:
-- En els paràmetres d'entrada només hi haurà una línia amb el dni d'un professor. Ignoreu i NO editeu la segona línia, -999, que marca el final del fitxer. 
+- En els paràmetres d'entrada només hi haurà una línia amb el dni d'un professor. Ignoreu i NO editeu la segona línia, -999, 
+que marca el final del fitxer. 
 - L'exercici per anar bé s'ha de resoldre amb màxim una sentència de consulta.
 
-En cas que s'identifiqui una de les situacions següents, el mètode ha de llançar una excepció identificada amb el codi d'error que s'indica.
+En cas que s'identifiqui una de les situacions següents, el mètode ha de llançar una excepció identificada amb el codi d'error 
+que s'indica.
 11: No hi ha cap despatx on NO hagi estat assignat el professor 
 12: Error intern
 
