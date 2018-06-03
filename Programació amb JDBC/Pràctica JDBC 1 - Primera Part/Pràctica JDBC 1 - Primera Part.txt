@@ -42,7 +42,7 @@ obtingut surti "El professor ja existeix"?
 Escriviu la resposta a les preguntes anteriors en el formulari del qüestionari i premeu "Envia".
 */
 
--- Solución:
+// Solución:
 Execució 1:
 Cap, perque fa un "rollback".
 Execució 2:
