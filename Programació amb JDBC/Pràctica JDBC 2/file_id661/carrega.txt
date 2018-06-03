@@ -1,0 +1,10 @@
+delete from assignacions;
+delete from professors;
+delete from despatxos;
+
+insert into professors values('111','Toni','3111');
+
+insert into despatxos values('Omega','128',20);
+insert into despatxos values('C6','120',14);
+
+insert into assignacions values('111','Omega','128',345,600);
