@@ -35,7 +35,7 @@ class CtrlDadesPublic extends CtrlDadesPrivat {
 	public ConjuntTuples consulta(Connection c, Tuple params) throws BDException {
         try {
         ConjuntTuples ct = new ConjuntTuples();
-        PreparedStatement ps = c.preparedStatement("select modul, numero from despatxos d " + 
+        PreparedStatement ps = c.prepareStatement("select modul, numero from despatxos d " + 
         " where not exists(select * from assignacions a where d.modul = a.modul and d.numero = a.numero and dni = ?);");
         int i = 1;
         String s = params.consulta(i);
