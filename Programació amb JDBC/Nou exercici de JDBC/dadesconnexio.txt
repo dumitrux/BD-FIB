@@ -1,0 +1,8 @@
+org.postgresql.Driver
+jdbc:postgresql://postgresfib.fib.upc.es:6433/NomBaseDeDades
+true
+org.postgresql.ssl.NonValidatingFactory
+true
+esquema
+usuari
+password

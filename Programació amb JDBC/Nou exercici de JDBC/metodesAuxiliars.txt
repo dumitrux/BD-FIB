@@ -1,0 +1,65 @@
+===============================
+OBTENIR DE LES DADES D’ENTRADA
+===============================
+
+Obtenir les dades del fitxer dadesentrada.txt 
+Mètode consulta sobre l’objecte "params" de la classe Tuple. 
+Deixa a "s" la fila "i" del fitxer dadesentrada.txt.
+
+	String s = params.consulta(i);    /* i>=1.
+
+
+=======================================
+CREAR I OMPLIR UN OBJECTE ConjuntTuples
+=======================================
+
+Crear un objecte ConjuntTuples "oct"
+
+	ConjuntTuples oct = new ConjuntTuples();
+
+Afegir una fila (de la classe Tuple) que volem retornar com a resultat a l'objecte "oct"
+
+	oct.afegir(fila)
+
+
+=======================================
+CREAR I OMPLIR UN OBJECTE Tuple
+=======================================
+
+Crear un objecte Tuple "fila"
+
+	Tuple fila = new Tuple();
+
+Cal crear una fila per cada fila que volguem que tingui el resultat del mètode Consulta
+
+
+Afegir una columna que volem retornar com a resultat a l'objecte "fila"
+
+	fila.afegir(valorColumna)      /* valorColumna ha de ser de classe String
+
+Cal fer un afegir per cada columna que es vulgui que tingui la "fila" en el resultat del mètode Consulta.
+
+
+=======================================
+RETORNAR OBJECTE ConjuntTuples
+=======================================
+
+Retornar un objecte ConjuntTuples "oct"
+
+	return oct;
+
+
+=======================================
+LLENÇAR UNA EXCEPCIÓ BDException
+=======================================
+
+Llençar una BDException identificada pel número "ce"
+
+	throw new BDException(ce);    /* El número d'excepció l'indica l'enunciat
+
+
+
+
+
+
+
