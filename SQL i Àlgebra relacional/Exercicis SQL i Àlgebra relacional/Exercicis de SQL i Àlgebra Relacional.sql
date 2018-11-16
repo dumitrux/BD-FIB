@@ -58,9 +58,12 @@ Omega		235.00
 */
 
 -- Solución:
-select modul, avg(instantfi-instantinici) as mitjana_durada
-from assignacions
-group by modul, numero;
+select d.modul, AVG(a.instantfi-a.instantinici) 
+from despatxos d
+inner join assignacions a on a.modul=d.modul and a.numero=d.numero
+where a.instantfi is not null 
+group by d.modul
+order by d.modul asc
 
 /*
 Joc de proves i descripció de l'error:
@@ -359,12 +362,13 @@ BARCELONA		0
 */
 
 -- Solución:
-insert into cost_ciutat 
-	(select distinct d.ciutat_dpt, 0
-	from departaments d
-	where not exists (select *
-					from empleats e
-					where d.num_dpt = e.num_dpt));
+INSERT INTO COST_CIUTAT (SELECT distinct d.ciutat_dpt, 0 
+from departaments d 
+where not exists(
+select * 
+from empleats e 
+natural inner join departaments d1
+where d.ciutat_dpt=d1.ciutat_dpt))
 
 /*
 Joc de proves i descripció de l'error:
