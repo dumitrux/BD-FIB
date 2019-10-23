@@ -361,7 +361,7 @@ CIUTAT_DPT		COST
 BARCELONA		0
 */
 
--- Solución:
+-- Solución1:
 INSERT INTO COST_CIUTAT (SELECT distinct d.ciutat_dpt, 0 
 from departaments d 
 where not exists(
@@ -370,8 +370,15 @@ from empleats e
 natural inner join departaments d1
 where d.ciutat_dpt=d1.ciutat_dpt))
 
-/*
-Joc de proves i descripció de l'error:
-JP1 - Files de cost: L'estat de la taula cost no és correcte després de les insercions, en el cas que hi hagi una ciutat 
-	on hi ha dos departaments i només un d'ells té empleats.
-*/
+-- Solución2:
+--By: @mpl1018
+
+insert into cost_ciutat
+(select distinct d.ciutat_dpt,0
+from departaments d
+where d.ciutat_dpt NOT in (
+select d1.ciutat_dpt
+from empleats e, departaments d1
+where d1.num_dpt=e.num_dpt
+)
+);
